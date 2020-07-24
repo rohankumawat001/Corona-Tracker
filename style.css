@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+:root{
+    --main-heading:#24405B;
+    --card-heading:#fff;
+    --card-subheading:#F3F3F3;
+    --red:#FF4D53;
+    --green:#2E7875;
+    --blue:#40B5E5;
+    --grey:#8E8E8E;
+
+
+}
+body,html{
+    background-image:url("images/web-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    font-size: 10px;
+    font-family: Poppins,sans-serif;
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+
+}
+.navbar{
+    width: 95vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem auto;
+
+}
+.heading img{
+    width: 5rem;
+}
+.inputBox{
+    display: flex;
+    align-items: center;
+}
+.inputBox input{
+    background-color: transparent;
+    border: 1px solid #d8d8d8;
+    border-radius: 3rem;
+    width: 25rem;
+    height:4rem;
+    padding: 0 4rem;
+    margin-right: 2rem;
+    font-size: 1.7rem;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, .1);
+}
+.inputBox input:focus,:active{
+    outline: none;
+}
+.inputBox button{
+    cursor: pointer;
+    border: none;
+    border-radius: 3rem;
+    width: 10rem;
+    height: 4rem;
+    background:#0044FF;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .3);
+}
+.inputBox button:active,:focus{ border: none;
+outline: none;
+box-shadow:1px 1px 10px rgba(0, 0, 0, .6) ;
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+
+}
+.data{
+    width: 100%;
+    min-height: 100%;
+}
+.box{
+    width: 50%;
+
+}
+.box .head {      
+    margin: 16rem 0 0 14rem;
+    border: none;
+    border-radius: 3rem;
+    text-align: center;
+    
+}
+.box .head span{
+    font-family: Circular Std Bold ,sans-serif;
+    width: 100%;
+    font-size: 4rem;
+    color: var(--main-heading);
+    font-weight:700;
+}
+.total{    
+    justify-content: center;
+    margin-left: 16rem;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    gap: 3rem;   
+}
+.total .card{
+    height: 20rem;
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 3rem;
+    box-shadow: 1rem 1rem 1.5rem rgba(0, 0, 0, .2);
+}
+.total .card p{
+    color: var(--card-heading);
+    font-size: 2rem;
+    margin: 3rem 0 2rem 0;
+}
+.total .card{
+    padding-top: 2rem;
+    font-size: 3rem;
+    color: var(--card-subheading);
+}
+.total div+p{
+    margin-top: 3rem;
+}
+.total div:first-child{
+    background-color: var(--red);
+}
+.total div:nth-child(2){
+    background-color: var(--green);
+}
+.total div:nth-child(3){
+    background-color: var(--grey);
+}
+.total div:nth-child(4){
+    background-color: var(--blue);
+}
+
+
+.footer {
+position: absolute;
+left:  0;
+bottom: 0;
+
+}
+.footer h1{
+    text-transform: capitalize;
+    margin:0 3rem 0 0;
+}
+.footer p{
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+}
+
+@media only screen and (max-width:600px){
+    body,html{
+        background-image: url(images/iPhone\ 6-7-8\ Plus\ –\ 1.jpg);
+        font-size: 8px;
+        width: 100vw;
+        overflow: hidden;
+    }
+    .heading img{
+        width: 2.5rem;
+    }
+    .navbar{
+        margin: 1rem 1rem;
+        justify-content: space-between;
+    }
+    .inputBox{
+        justify-content: flex-end;
+    }
+    .inputBox input{
+        width: 15rem;
+        height:3rem;
+        margin-right: 1.5rem;
+        
+        
+    }
+    .inputBox button{
+       width: 6rem;
+       height: 3rem;
+        font-size: 1rem;
+     
+        border-radius: 1.5rem;
+    }
+    .box{
+        width: 100%;
+    }
+    .box .head{
+        margin: 6rem auto 1rem;
+        width: 95%;
+        text-align: center;
+    }
+    .box .head span{
+        font-size: 3rem;
+    }
+    .total{
+        justify-content: center;
+        width: 100%;
+        margin: 3rem 0;
+        gap: 2.5rem;
+        grid-template-columns: repeat(2, 120px);
+    }
+    .total .card{
+        padding: 2rem;
+        font-size: 2.5rem;
+        border-radius: 3rem;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .total .card p{
+        font-size: 1.5rem;
+        margin-top: 0;
+    }
+    .footer h1{
+        font-family: Circular Std Bold,sans-serif;
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        margin:0 1rem 0 0;
+    }
+    .footer p{
+        font-size: 1.2rem;
+        margin-bottom: 0;
+    }
+}
