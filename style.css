@@ -23,7 +23,7 @@ body,html{
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-image:url("/images/web-bg.jpg");
+    background-image:url("images/web-bg.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -161,7 +161,7 @@ bottom: 0;
     }
     .container{
         background-position: center;
-        background-image: url("/images/iPhone\ 6-7-8\ Plus\ –\ 1.jpg");
+        background-image: url("images/mobile.jpg");
 
     }
     .heading img{
