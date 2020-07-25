@@ -46,8 +46,8 @@ function showData(stateData,index){
     </div>
     <div class="total">
     <div class="card"><p>Total Confirmed</p>   ${stateData.statewise[index].confirmed}</div>    
-    <div class="card"><p>Total Deaths</p>     ${stateData.statewise[index].deaths}   </div> 
     <div class="card"><p>Total Recovered</p>   ${stateData.statewise[index].recovered}</div>
+    <div class="card"><p>Total Deaths</p>     ${stateData.statewise[index].deaths}   </div> 
     <div class="card"><p>Active</p>           ${stateData.statewise[index].active}   </div>       
     </div>
     </div>`;

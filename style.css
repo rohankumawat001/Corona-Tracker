@@ -160,6 +160,8 @@ bottom: 0;
         overflow: hidden;
     }
     .container{
+       height: 100vh;
+       overflow-y: hidden;
         background-position: center;
         background-image: url("images/mobile.jpg");
 
@@ -175,6 +177,8 @@ bottom: 0;
         justify-content: flex-end;
     }
     .inputBox input{
+        padding: .5rem 2.5rem;
+        font-size: 1.2rem;
         width: 15rem;
         height:3rem;
         margin-right: 1.5rem;
@@ -207,6 +211,7 @@ bottom: 0;
         grid-template-columns: repeat(2, 120px);
     }
     .total .card{
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, .3);
         padding: 2rem;
         font-size: 2.5rem;
         border-radius: 3rem;
