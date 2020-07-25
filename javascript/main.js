@@ -1,6 +1,8 @@
 let data = document.querySelector(".data");
 
 
+
+
                                             //?Fetch data 
 async  function getData(){
     const response  = await fetch("https://api.covid19india.org/data.json");
@@ -11,8 +13,6 @@ getData().then((stateData)=>{
     index= 0;
     showData(stateData,index)
 });
-
-
 
 
 
@@ -38,6 +38,8 @@ function stateCase(){
 });
 }
 
+
+
  
                                                  //? Show Data on Search 
 function showData(stateData,index){
@@ -60,7 +62,7 @@ function showError(){
     console.log("no");
     data.innerHTML=`<div class ="box">
     <div class="head">
-        <span style="color:red">Please enter a valid state name </span>
+        <span style="color:red">Please Enter a Valid State Name </span>
     </div>`
 } 
 
@@ -69,7 +71,7 @@ function showError(){
 
 btn.addEventListener("click",stateCase);
 window.addEventListener("keypress",(e)=>{
-if(e.code=="Enter"){
+if(e.keyCode==13){
     stateCase();
 }else{
     null
